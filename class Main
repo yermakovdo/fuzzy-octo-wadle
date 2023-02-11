@@ -1,0 +1,18 @@
+public class Main{
+        public static void main(String[] args){
+            Scanner input = new Scanner(System.in);
+            int a = input.nextInt();
+            int b = input.nextInt();
+            int c = input.nextInt();
+            int d = input.nextInt();
+            int e = input.nextInt();
+            int f = input.nextInt();
+            Cylinder cylinder = new Cylinder(a,b);
+            Ball ball = new Ball(c);
+            Pyramid pyramid = new Pyramid(d,e);
+            Box box = new Box(f);
+            System.out.println(box.add(ball));
+            System.out.println(box.add(cylinder));
+            System.out.println(box.add(pyramid));
+        }
+    }
