@@ -1,0 +1,7 @@
+public static class Cylinder extends SolidOfRevolution{
+        private double height;
+        public Cylinder(double radius, double height){
+            super(Math.PI*radius*radius*height,radius); // π*r^2*h
+            this.height = height;
+        }
+    }
