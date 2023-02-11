@@ -1,0 +1,9 @@
+public static class Pyramid extends Shape{
+        private double height;
+        private double s;
+        public Pyramid(double height, double s){
+            super(height * s * 4 / 3); // 1/3*s*h
+            this.height = height;
+            this.s = s;
+        }
+    }
